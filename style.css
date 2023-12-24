@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+header{
+  text-align: center;
+   margin-top: 40px;
+}
+
+header h1{
+    font-size: 1.8rem;
+}
+
+header p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#row{
+    justify-content: space-between;
+    display: flex;
+}
+
+#row .col-1{
+    width:20%;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 0, 0, 0, 0.6;
+}
+
+#row .col-1 .projects{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+#row .col-1 li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-top: 20px;
+
+}
+
+hr{
+    width: 80%;
+    margin-top: 15px;
+    text-decoration: dotted;
+    height: 0.6px;
+    color: #000;
+}
+
+#row .col-1 li a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #000;
+    text-align: start;
+    transition: 0.3s ease-out;
+}
+
+#row .col-1 li a:hover{
+    background-color: gray;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+#row .col-2{
+    width: 75%;
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-right: 0;
+    box-shadow: 0, 0, 0, 0.6;
+    border: 0.7px solid #000;
+    border-left: none;
+    border-right: none;
+}
+
+#row .col-2 .content{
+    margin-left:50px;
+    justify-content: space-between;
+    align-items: center;
+    width:27%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#row .col-2 .content span{
+    font-size: 14px;
+    color: #000;
+}
+
+#row .col-2 .content img{
+    height: 35vh;
+    width: 120%;
+    padding: 20px;
+    border-radius: 12px;
+   border: 0.5px solid #000;
+   transition: 0.3s ease;
+}
+
+#row .col-2 .content img:hover{
+    opacity: 0.6;
+}
+
+#row .col-2 .content button{
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+   
+}
+
+#row .col-2 .content button:hover{
+    background-color: grey;
+}
+
+#row .col-2 .content button a{
+    text-decoration: none;
+    color: #000;
+}
+
+#row .col-2 .content button a:hover{
+    color: #fff;
+}
+
+#row .col-2 .content p{
+    font-size: 1rem;
+    font-weight: 900;
+}
