@@ -73,7 +73,7 @@ hr{
 
 #row .col-2{
     width: 75%;
-    height: 120vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -82,6 +82,7 @@ hr{
     border: 0.7px solid #000;
     border-left: none;
     border-right: none;
+    margin-bottom: none;
 }
 
 #row .col-2 .content{
@@ -142,4 +143,115 @@ hr{
 #row .col-2 .content p{
     font-size: 1rem;
     font-weight: 900;
+}
+@media only screen and (max-width: 780px){
+
+    p {
+       text-align: center;
+      
+       
+    }
+    #row {
+        width: 100%;
+       
+    }
+
+    #row .col-1 li a {
+        text-decoration: none;
+        display: flex;
+        text-align: start;
+        margin-top: 15px;
+        font-size: 0.8rem;
+        transition: 0.3s ease-out;
+    }
+    #row .col-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       overflow-y: scroll;
+        
+    }
+
+    #row .col-2 .content span {
+        font-size: 12px;
+        margin-bottom: 0;
+        
+    }
+
+    #row .col-2 .content button {
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+        padding: 3px 5px;
+        border-radius: 3px;
+        margin-right: 4px;
+        text-align: start;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    #row .col-2 .content p {
+        font-size: 0.8rem;
+       margin-top: 5px;
+    }
+    #row .col-2 .content img {
+        height: 35vh;
+        width: 340px;
+        margin-top: 20px;
+        margin-right: 20px;
+       margin-bottom: 40px;
+    }
+
+    #row .col-2 .content button {
+       margin-bottom: 30px;
+    }
+    #row .col-1 li {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #row .col-1 li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #row {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #row .col-1 li a{
+        font-size: 24px;
+    }
+
+    #row .col-1 li a {
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        transition: 0.3s ease-out;
+    }
+
+    #row .col-2 .content img {
+        height: 35vh;
+        width: 100%;
+        margin-top: 20px;
+       margin-bottom: 40px;
+    }
+
+    
 }
